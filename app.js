@@ -35,7 +35,6 @@ const filterTodos = (term) => {
 			return !todo.textContent.includes(term);
 		})
 		.forEach((todo) => {
-			console.log(todo);
 			todo.classList.add('filtered');
 		});
 
@@ -44,7 +43,6 @@ const filterTodos = (term) => {
 			return todo.textContent.includes(term);
 		})
 		.forEach((todo) => {
-			console.log(todo);
 			todo.classList.remove('filtered');
 		});
 };
